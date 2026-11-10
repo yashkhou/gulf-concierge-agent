@@ -1,9 +1,9 @@
 {
   "ranAt": "2026-11-10T11:31:56.056Z",
-  "regradedAt": "2026-11-10T11:55:36.051Z",
+  "regradedAt": "2026-11-10T12:03:31.597Z",
   "stamp": "2026-11-10T11-23-06Z",
   "model": "claude-sonnet-5-5",
-  "gitSha": "2fad325",
+  "gitSha": "09e58bb",
   "cases": 300,
   "passed": 299,
   "handoffsTotal": 90,

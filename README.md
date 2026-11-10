@@ -57,7 +57,7 @@ Each case is a short conversation plus the label the next turn must earn: which 
 | complaint | 20 | Anger, past dealings, "human please" hand off |
 | chit_chat | 35 | No tool call on greetings and small talk |
 
-Labels: a model judge labelled all 300 cold (`evals/judge.mjs`). Josh checks a stratified 60 by hand on the review page (`npm run review`, answers land in `evals/review/josh.jsonl`); his label wins, and the control room shows how often the judge agreed with him once the check is in. Every failed case, its cause and its fix are listed on the room page and in `evals/runs/<stamp>/report.json`.
+Labels: a model judge labelled all 300 cold (`evals/judge.mjs`). Josh checked a stratified 60 by hand on the review page (`npm run review`; his answers are `evals/review/josh.jsonl`): 0 labels corrected, and the judge had labelled all 60 the same way (`evals/labels/agreement.json`). His label wins where they differ; the control room shows the agreement figure. Every failed case, its cause and its fix are listed on the room page and in `evals/runs/<stamp>/report.json`.
 
 ```sh
 node evals/run.mjs --post          # all 300 through the agent, ~10 min at 3 concurrent, then post to the room

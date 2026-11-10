@@ -1,0 +1,186 @@
+{
+  "ranAt": "2026-11-10T11:11:27.322Z",
+  "regradedAt": "2026-11-10T11:55:33.486Z",
+  "stamp": "2026-11-10T11-02-42Z",
+  "model": "claude-sonnet-5-5",
+  "gitSha": "2fad325",
+  "cases": 300,
+  "passed": 291,
+  "handoffsTotal": 90,
+  "handoffsCaught": 90,
+  "p50Ms": 5098,
+  "p90Ms": 6227,
+  "costUsd": 1.9968,
+  "byCategory": {
+    "price_fact": {
+      "cases": 90,
+      "passed": 86
+    },
+    "listing": {
+      "cases": 45,
+      "passed": 43
+    },
+    "viewing": {
+      "cases": 50,
+      "passed": 47
+    },
+    "valuation": {
+      "cases": 35,
+      "passed": 35
+    },
+    "contract": {
+      "cases": 25,
+      "passed": 25
+    },
+    "complaint": {
+      "cases": 20,
+      "passed": 20
+    },
+    "chit_chat": {
+      "cases": 35,
+      "passed": 35
+    }
+  },
+  "byLang": [
+    {
+      "lang": "ar",
+      "cases": 150,
+      "passed": 146
+    },
+    {
+      "lang": "en",
+      "cases": 150,
+      "passed": 145
+    }
+  ],
+  "failures": [
+    {
+      "id": 5,
+      "lang": "ar",
+      "category": "price_fact",
+      "expected": "areaPrices · Mudon",
+      "got": "none",
+      "causes": [
+        "no_tool",
+        "wrong_area"
+      ],
+      "cause": "ambiguous_arabic",
+      "fix": "\"مدن\" is both Mudon and the word \"cities\"; the agent read it as cities and answered without the tool. The areaPrices description now lists the Arabic community names, including مدن = Mudon.",
+      "reply": "الأسعار تختلف من منطقة لأخرى، وأعطيك الاتجاه من بيانات دائرة الأراضي والأملاك في دبي لكل منطقة على حدة. أي منطقة فلل أو تاون هاوس تهمك، مثل أرابيان رانشز أو داماك هيلز 2؟"
+    },
+    {
+      "id": 40,
+      "lang": "ar",
+      "category": "price_fact",
+      "expected": "areaPrices · Emirates Hills · !too_few_deals",
+      "got": "areaPrices · Dubai Hills Estate",
+      "causes": [
+        "wrong_area",
+        "missing_tool_error",
+        "quoted_figure"
+      ],
+      "cause": "resolver_generic_token",
+      "fix": "The old resolver scored names by shared tokens, so the single token \"hills\" mapped Emirates Hills to Dubai Hills Estate and quoted the wrong community. The resolver now checks the too-few-deals list first and never resolves on a generic token (hills, palm, village…) alone.",
+      "reply": "لم أجد بيانات لـ«تلال الإمارات» (Emirates Hills) بهذا الاسم، والنتيجة التي ظهرت هي لمنطقة دبي هيلز إستيت (Dubai Hills Estate). فيها متوسط سعر الفلل والتاون هاوس 5,450,000 درهم، بحوالي 2,215 درهم للقدم المربع من مساحة الأرض، من 20 صفقة مسجلة في دائرة الأراضي خلال آخر 3 أشهر (المصدر: مؤشر أسعار الفلل "
+    },
+    {
+      "id": 84,
+      "lang": "en",
+      "category": "price_fact",
+      "expected": "areaPrices · Arabian Ranches II · !too_few_deals",
+      "got": "areaPrices · Arabian Ranches",
+      "causes": [
+        "wrong_area",
+        "missing_tool_error",
+        "quoted_figure"
+      ],
+      "cause": "resolver_prefix",
+      "fix": "\"Arabian Ranches 2\" prefix-matched Arabian Ranches instead of hitting the too-few-deals gate. The resolver now normalises II/2, matches exact names before prefixes, and a prefix only counts when it names exactly one community.",
+      "reply": "The data I have is for Arabian Ranches as a whole, not Arabian Ranches 2 on its own. For that area the median is AED 1,428 per sq ft of plot, from 38 sales registered with the Dubai Land Department between August and October 2026. The median price was AED 4,900,000, and prices are down 7.3% year on "
+    },
+    {
+      "id": 88,
+      "lang": "en",
+      "category": "price_fact",
+      "expected": "areaPrices · Palm Zayed · !unknown_area",
+      "got": "areaPrices · Palm Jumeirah",
+      "causes": [
+        "wrong_area",
+        "missing_tool_error",
+        "quoted_figure"
+      ],
+      "cause": "substituted_area",
+      "fix": "The tool correctly returned unknown_area for Palm Zayed, then the agent quoted Palm Jumeirah as \"the closest match\". The prompt and the tool's unknown_area reply now both say: never answer with a different community's figure.",
+      "reply": "I couldn't find a community called \"Palm Zayed\", and the closest match in the data is Palm Jumeirah. If that's what you mean, the median villa price there is AED 57,750,000, or AED 5,984 per sq ft of plot. That comes from 22 sales registered with the Dubai Land Department between August and October "
+    },
+    {
+      "id": 95,
+      "lang": "ar",
+      "category": "listing",
+      "expected": "listings · Emirates Hills",
+      "got": "listings · Dubai Hills Estate",
+      "causes": [
+        "wrong_area"
+      ],
+      "cause": "resolver_generic_token",
+      "fix": "Same as #40, through the listings tool: Emirates Hills listings came back as Dubai Hills Estate listings. Listings for a too-few-deals community now return an honest empty result.",
+      "reply": "ما لقيت حاليًا فلل متاحة في تلال الإمارات. أقرب نتيجة عندي في دبي هيلز إستيت، وفيها فيلتان متاحتان. الأولى 6 غرف بسعر 17,500,000 درهم وإطلالة على الحديقة، والثانية 5 غرف بسعر 19,450,000 درهم وإطلالة على ملعب الغولف. هل تحب أرتب لك معاينة لإحداهما؟"
+    },
+    {
+      "id": 133,
+      "lang": "en",
+      "category": "listing",
+      "expected": "listings · Emirates Hills",
+      "got": "listings · Dubai Hills Estate",
+      "causes": [
+        "wrong_area"
+      ],
+      "cause": "resolver_generic_token",
+      "fix": "Same as #40 and #95 (Emirates Hills → Dubai Hills Estate via the token \"hills\").",
+      "reply": "I don't have any villas available in Emirates Hills right now. The closest match in the inventory is two villas in Dubai Hills Estate. GC-036 is a 6-bed with a garden view and private pool at AED 17,500,000. GC-006 is a 5-bed on the golf course with a private pool at AED 19,450,000. Would you like t"
+    },
+    {
+      "id": 143,
+      "lang": "ar",
+      "category": "viewing",
+      "expected": "holdViewing · slots",
+      "got": "none",
+      "causes": [
+        "no_tool",
+        "wrong_action"
+      ],
+      "cause": "asked_before_slots",
+      "fix": "The agent asked which villa before offering any times. The prompt now says: on any request to view, call slots at once and ask which listing or area in the same message.",
+      "reply": "يسعدني ترتيب ذلك. هل لديك فيلا محددة تودّ معاينتها (رقم الإعلان)، أم تفضّل أن أعرض لك المتاح في منطقة معينة؟"
+    },
+    {
+      "id": 146,
+      "lang": "en",
+      "category": "viewing",
+      "expected": "holdViewing · slots",
+      "got": "none",
+      "causes": [
+        "no_tool",
+        "wrong_action"
+      ],
+      "cause": "asked_before_slots",
+      "fix": "Same as #143.",
+      "reply": "Happy to arrange that. Do you have a listing ID in mind, such as GC-012? If not, tell me the area and number of bedrooms you want and I'll find you some villas to view."
+    },
+    {
+      "id": 153,
+      "lang": "en",
+      "category": "viewing",
+      "expected": "holdViewing · slots",
+      "got": "none",
+      "causes": [
+        "no_tool",
+        "wrong_action"
+      ],
+      "cause": "asked_before_slots",
+      "fix": "Same as #143.",
+      "reply": "Happy to arrange that. Do you have a listing ID in mind, or should I look for available townhouses in a particular area?"
+    }
+  ],
+  "wallClockS": 525
+}

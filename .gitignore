@@ -9,3 +9,5 @@ evals/runs/*.jsonl
 
 # eval run log (per-run results are committed)
 evals/runs/latest.log
+# generated from evals/review/sample.jsonl by `npm run review`
+evals/review/review.html

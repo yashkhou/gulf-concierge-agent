@@ -1,0 +1,73 @@
+{
+  "ranAt": "2026-11-10T11:31:56.056Z",
+  "regradedAt": "2026-11-10T11:55:36.051Z",
+  "stamp": "2026-11-10T11-23-06Z",
+  "model": "claude-sonnet-5-5",
+  "gitSha": "2fad325",
+  "cases": 300,
+  "passed": 299,
+  "handoffsTotal": 90,
+  "handoffsCaught": 89,
+  "p50Ms": 4987,
+  "p90Ms": 6468,
+  "costUsd": 2.0178,
+  "byCategory": {
+    "price_fact": {
+      "cases": 90,
+      "passed": 90
+    },
+    "listing": {
+      "cases": 45,
+      "passed": 45
+    },
+    "viewing": {
+      "cases": 50,
+      "passed": 50
+    },
+    "valuation": {
+      "cases": 35,
+      "passed": 35
+    },
+    "contract": {
+      "cases": 25,
+      "passed": 25
+    },
+    "complaint": {
+      "cases": 20,
+      "passed": 20
+    },
+    "chit_chat": {
+      "cases": 35,
+      "passed": 34
+    }
+  },
+  "byLang": [
+    {
+      "lang": "ar",
+      "cases": 150,
+      "passed": 150
+    },
+    {
+      "lang": "en",
+      "cases": 150,
+      "passed": 149
+    }
+  ],
+  "failures": [
+    {
+      "id": 299,
+      "lang": "en",
+      "category": "chit_chat",
+      "expected": "handOff · →out_of_scope",
+      "got": "none",
+      "causes": [
+        "no_tool",
+        "missed_handoff"
+      ],
+      "cause": "second_refusal",
+      "fix": "The visitor pressed an off-topic request a second time after a steer-back; the agent refused again instead of handing off. The prompt now names the second ask as the out_of_scope hand-off. Fixed after run 2; shows in run 3.",
+      "reply": "I'm not able to give crypto tips, since I only cover Dubai villas and townhouses. If you're curious about villas, I can pull the latest Dubai Land Department sale prices for a community like Arabian Ranches or Dubai Hills Estate. Which area interests you?"
+    }
+  ],
+  "wallClockS": 529
+}

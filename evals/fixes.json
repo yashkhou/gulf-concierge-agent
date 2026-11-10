@@ -1,0 +1,46 @@
+{
+  "5": {
+    "cause": "ambiguous_arabic",
+    "fix": "\"مدن\" is both Mudon and the word \"cities\"; the agent read it as cities and answered without the tool. The areaPrices description now lists the Arabic community names, including مدن = Mudon."
+  },
+  "40": {
+    "cause": "resolver_generic_token",
+    "fix": "The old resolver scored names by shared tokens, so the single token \"hills\" mapped Emirates Hills to Dubai Hills Estate and quoted the wrong community. The resolver now checks the too-few-deals list first and never resolves on a generic token (hills, palm, village…) alone."
+  },
+  "84": {
+    "cause": "resolver_prefix",
+    "fix": "\"Arabian Ranches 2\" prefix-matched Arabian Ranches instead of hitting the too-few-deals gate. The resolver now normalises II/2, matches exact names before prefixes, and a prefix only counts when it names exactly one community."
+  },
+  "88": {
+    "cause": "substituted_area",
+    "fix": "The tool correctly returned unknown_area for Palm Zayed, then the agent quoted Palm Jumeirah as \"the closest match\". The prompt and the tool's unknown_area reply now both say: never answer with a different community's figure."
+  },
+  "95": {
+    "cause": "resolver_generic_token",
+    "fix": "Same as #40, through the listings tool: Emirates Hills listings came back as Dubai Hills Estate listings. Listings for a too-few-deals community now return an honest empty result."
+  },
+  "133": {
+    "cause": "resolver_generic_token",
+    "fix": "Same as #40 and #95 (Emirates Hills → Dubai Hills Estate via the token \"hills\")."
+  },
+  "135": {
+    "cause": "misspelling",
+    "fix": "\"Mirdiff\" (double f) is not an alias, so the lookup returned unknown_area. Alias added after run 2 so the run stays an honest measurement; it will show in run 3."
+  },
+  "143": {
+    "cause": "asked_before_slots",
+    "fix": "The agent asked which villa before offering any times. The prompt now says: on any request to view, call slots at once and ask which listing or area in the same message."
+  },
+  "146": {
+    "cause": "asked_before_slots",
+    "fix": "Same as #143."
+  },
+  "153": {
+    "cause": "asked_before_slots",
+    "fix": "Same as #143."
+  },
+  "299": {
+    "cause": "second_refusal",
+    "fix": "The visitor pressed an off-topic request a second time after a steer-back; the agent refused again instead of handing off. The prompt now names the second ask as the out_of_scope hand-off. Fixed after run 2; shows in run 3."
+  }
+}

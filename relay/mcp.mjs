@@ -30,7 +30,11 @@ const TOOLS = [
   {
     name: 'areaPrices',
     description:
-      'Registered villa sale prices for one Dubai community over the last three full months, from Dubai Land Department data. Use it for every price question. Returns AED per sq ft, median price, number of registered deals, month-on-month and year-on-year change, bedroom breakdown and the source line. Refuses areas with too few deals. Pass the community name in English if you can (e.g. "Arabian Ranches", "The Springs", "DAMAC Hills 2").',
+      'Registered villa sale prices for one Dubai community over the last three full months, from Dubai Land Department data. Use it for every price question. Returns AED per sq ft, median price, number of registered deals, month-on-month and year-on-year change, bedroom breakdown and the source line. Refuses areas with too few deals. Pass the community name in English if you can (e.g. "Arabian Ranches", "The Springs", "DAMAC Lagoons"). Communities in the index: ' +
+      prices.areas.map((a) => a.name).join('; ') +
+      '. Too few deals, will refuse: ' +
+      (prices.excluded || []).map((a) => a.name).join('; ') +
+      '. Arabic names: دبي هيلز = Dubai Hills Estate, المرابع العربية = Arabian Ranches, الينابيع = The Springs, المروج = The Meadows, البحيرات = The Lakes, مدن = Mudon, تلال الغاف = Tilal Al Ghaf, نخلة جميرا = Palm Jumeirah, جزر جميرا = Jumeirah Islands, قرية جميرا الدائرية = Jumeirah Village Circle, داماك لاجونز = DAMAC Lagoons, الفرجان = Al Furjan, مدن = Mudon (the community, not "cities"). DAMAC Hills, DAMAC Hills 2 and Jumeirah Golf Estates are not in the index: pass the name anyway and relay the unknown_area answer.',
     inputSchema: { type: 'object', properties: { area: { type: 'string', description: 'Community name, English or Arabic' } }, required: ['area'] },
   },
   {
@@ -76,34 +80,58 @@ const TOOLS = [
   },
 ];
 
-const norm = (s) => String(s || '').toLowerCase().replace(/^(the|al|ال)\s+/u, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+// Resolution order: alias → exact name (too-few-deals list first, so "Emirates Hills" refuses instead of fuzzing to
+// Dubai Hills) → the input is a prefix of exactly one name → every input token appears in exactly one name.
+// A single generic token ("hills", "palm", "village") never resolves on its own: "Gaf Hills" is unknown, not Dubai Hills.
+const norm = (s) =>
+  String(s || '')
+    .toLowerCase()
+    .replace(/[٠-٩]/g, (d) => String(d.charCodeAt(0) - 0x660))
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .replace(/^(the|al|ال)\s+/u, '')
+    .replace(/\b(iii)\b/g, '3')
+    .replace(/\b(ii)\b/g, '2')
+    .trim();
+const aliasMap = Object.fromEntries(Object.entries(aliases).map(([k, v]) => [norm(k), v]));
+const GENERIC = new Set(['hills', 'hill', 'estate', 'estates', 'dubai', 'village', 'villages', 'gardens', 'garden', 'city', 'park', 'community', 'villas', 'villa', 'island', 'islands', 'palm', 'lakes', 'lake', 'views', 'heights', 'meadows', 'town', 'square', 'residence', 'residences', 'tower', 'towers']);
+const tokens = (s) => s.split(' ').filter((t) => t.length > 2 || /^\d+$/.test(t));
 
 function findArea(q) {
   const n = norm(q);
-  if (!n) return { area: null, suggestions: [] };
-  const byAlias = aliases[n] || aliases[norm(q).replace(/\s+/g, '')];
-  const target = byAlias ? norm(byAlias) : n;
-  let hit = prices.areas.find((a) => norm(a.name) === target);
-  if (!hit) hit = prices.areas.find((a) => norm(a.name).startsWith(target) || target.startsWith(norm(a.name)));
-  if (!hit) {
-    const toks = target.split(' ').filter((t) => t.length > 2);
-    const scored = prices.areas
-      .map((a) => ({ a, s: toks.filter((t) => norm(a.name).includes(t)).length }))
-      .filter((x) => x.s > 0)
-      .sort((x, y) => y.s - x.s);
-    if (scored.length === 1 || (scored.length > 1 && scored[0].s > scored[1].s)) hit = scored[0].a;
-    else return { area: null, suggestions: scored.slice(0, 4).map((x) => x.a.name) };
+  if (!n) return { area: null, excluded: null, suggestions: [] };
+  const alias = aliasMap[n] || aliasMap[n.replace(/\s+/g, '')];
+  const target = alias ? norm(alias) : n;
+  const all = [...prices.areas.map((a) => ({ a, ok: true })), ...(prices.excluded || []).map((a) => ({ a, ok: false }))];
+  const pick = (x) => (x.ok ? { area: x.a, excluded: null, suggestions: [] } : { area: null, excluded: x.a, suggestions: [] });
+
+  const exact = all.find((x) => norm(x.a.name) === target);
+  if (exact) return pick(exact);
+
+  const prefix = all.filter((x) => norm(x.a.name).startsWith(target + ' '));
+  if (prefix.length === 1) return pick(prefix[0]);
+
+  const toks = tokens(target);
+  if (toks.length && !toks.every((t) => GENERIC.has(t))) {
+    const subset = all.filter((x) => {
+      const nt = new Set(tokens(norm(x.a.name)));
+      return toks.every((t) => nt.has(t));
+    });
+    if (subset.length === 1) return pick(subset[0]);
   }
-  return { area: hit, suggestions: [] };
+
+  const suggestions = prices.areas
+    .map((a) => ({ a, s: toks.filter((t) => !GENERIC.has(t) && norm(a.name).includes(t)).length }))
+    .filter((x) => x.s > 0)
+    .sort((x, y) => y.s - x.s)
+    .slice(0, 4)
+    .map((x) => x.a.name);
+  return { area: null, excluded: null, suggestions };
 }
 
 function areaPrices({ area }) {
-  const excluded = prices.excluded.find((e) => norm(e.name) === norm(area) || norm(aliases[norm(area)] || '') === norm(e.name));
-  const { area: hit, suggestions } = findArea(area);
-  if (!hit) {
-    if (excluded) return { error: 'too_few_deals', area: excluded.name, deals: excluded.sales, minDeals: prices.minDeals, say: 'Not enough registered sales in the last three months to quote a reliable figure.' };
-    return { error: 'unknown_area', asked: area, suggestions, knownAreas: prices.areas.map((a) => a.name) };
-  }
+  const { area: hit, excluded, suggestions } = findArea(area);
+  if (excluded) return { error: 'too_few_deals', area: excluded.name, deals: excluded.sales, minDeals: prices.minDeals, say: 'Not enough registered sales in the last three months to quote a reliable figure. Do not give any number for this community.' };
+  if (!hit) return { error: 'unknown_area', asked: area, suggestions, knownAreas: prices.areas.map((a) => a.name), say: 'Not a Dubai villa community in the index. Say so; do not give a number for it or for a different community instead.' };
   return {
     area: hit.name,
     window: prices.window,
@@ -124,7 +152,8 @@ function searchListings({ area, beds, maxPrice, limit }) {
   let rows = listings;
   let areaName = null;
   if (area) {
-    const { area: hit, suggestions } = findArea(area);
+    const { area: hit, excluded, suggestions } = findArea(area);
+    if (excluded) return { area: excluded.name, count: 0, listings: [], note: 'No villas listed in this community right now.' };
     if (!hit) return { error: 'unknown_area', asked: area, suggestions };
     areaName = hit.name;
     rows = rows.filter((l) => l.area === hit.name);

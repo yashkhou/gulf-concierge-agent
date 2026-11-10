@@ -96,13 +96,26 @@ export class Store {
     const passed = run.cases.filter((c) => c.passed).length;
     const handoffsTotal = run.cases.filter((c) => c.handoffExpected).length;
     const handoffsCaught = run.cases.filter((c) => c.handoffExpected && c.handoffCaught).length;
-    const res = await this.db
-      .prepare(
-        'INSERT INTO eval_runs (ran_at, model, cases, passed, handoffs_total, handoffs_caught, labelled_by_josh, judge_agreement, p50_ms, cost_usd, git_sha, report_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id',
-      )
-      .bind(run.ranAt, run.model, run.cases.length, passed, handoffsTotal, handoffsCaught, run.labelledByJosh, run.judgeAgreement, run.p50Ms, run.costUsd, run.gitSha, run.reportUrl)
-      .first<{ id: number }>();
-    const id = res!.id;
+    // One row per run: the report URL carries the run stamp, so a regrade of the same run replaces its row and cases.
+    const existing = await this.db.prepare('SELECT id FROM eval_runs WHERE report_url = ?').bind(run.reportUrl).first<{ id: number }>();
+    let id: number;
+    if (existing) {
+      id = existing.id;
+      await this.db.batch([
+        this.db
+          .prepare('UPDATE eval_runs SET ran_at = ?, model = ?, cases = ?, passed = ?, handoffs_total = ?, handoffs_caught = ?, labelled_by_josh = ?, judge_agreement = ?, p50_ms = ?, cost_usd = ?, git_sha = ? WHERE id = ?')
+          .bind(run.ranAt, run.model, run.cases.length, passed, handoffsTotal, handoffsCaught, run.labelledByJosh, run.judgeAgreement, run.p50Ms, run.costUsd, run.gitSha, id),
+        this.db.prepare('DELETE FROM eval_cases WHERE run_id = ?').bind(id),
+      ]);
+    } else {
+      const res = await this.db
+        .prepare(
+          'INSERT INTO eval_runs (ran_at, model, cases, passed, handoffs_total, handoffs_caught, labelled_by_josh, judge_agreement, p50_ms, cost_usd, git_sha, report_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id',
+        )
+        .bind(run.ranAt, run.model, run.cases.length, passed, handoffsTotal, handoffsCaught, run.labelledByJosh, run.judgeAgreement, run.p50Ms, run.costUsd, run.gitSha, run.reportUrl)
+        .first<{ id: number }>();
+      id = res!.id;
+    }
     const stmt = this.db.prepare('INSERT INTO eval_cases (run_id, case_id, lang, category, label_by, passed, expected, got, cause, fix) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
     for (let i = 0; i < run.cases.length; i += 50) {
       await this.db.batch(run.cases.slice(i, i + 50).map((c) => stmt.bind(id, c.id, c.lang, c.category, c.labelBy, c.passed ? 1 : 0, c.expected, c.got, c.cause ?? null, c.fix ?? null)));

@@ -13,7 +13,8 @@
     "migrate": "wrangler d1 migrations apply concierge --remote",
     "migrate:local": "wrangler d1 migrations apply concierge --local",
     "eval": "node evals/run.mjs",
-    "judge": "node evals/judge.mjs"
+    "judge": "node evals/judge.mjs",
+    "review": "node evals/judge.mjs --sample 60 && node evals/review.mjs"
   },
   "devDependencies": {
     "wrangler": "^4.159.0"

@@ -1,0 +1,60 @@
+# Judge vs authored · 242/300 same · 0 unlabelled
+
+- #36 price_fact ar: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · The Sustainable City · !too_few_deals · mustNot:quoteFigure`
+- #37 price_fact ar: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · Al Barari · !too_few_deals · mustNot:quoteFigure`
+- #38 price_fact ar: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · Mirdif · !too_few_deals · mustNot:quoteFigure`
+- #39 price_fact ar: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · Cherrywoods · !too_few_deals · mustNot:quoteFigure`
+- #40 price_fact ar: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · Emirates Hills · !too_few_deals · mustNot:quoteFigure`
+- #81 price_fact en: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · The Sustainable City · !too_few_deals · mustNot:quoteFigure`
+- #82 price_fact en: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · Al Barari · !too_few_deals · mustNot:quoteFigure`
+- #83 price_fact en: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · Mirdif · !too_few_deals · mustNot:quoteFigure`
+- #84 price_fact en: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · Arabian Ranches II · !too_few_deals · mustNot:quoteFigure`
+- #85 price_fact en: authored `areaPrices · !too_few_deals · mustNot:quoteFigure` · judge `areaPrices · Cherrywoods · !too_few_deals · mustNot:quoteFigure`
+- #87 price_fact en: authored `areaPrices · !unknown_area · mustNot:quoteFigure` · judge `areaPrices · Falcon Crest Estates · !unknown_area · mustNot:quoteFigure`
+- #88 price_fact en: authored `areaPrices · !unknown_area · mustNot:quoteFigure` · judge `areaPrices · Palm Zayed · !unknown_area · mustNot:quoteFigure`
+- #95 listing ar: authored `listings` · judge `listings · Emirates Hills`
+- #103 listing ar: authored `listings` · judge `listings · Mirdif`
+- #133 listing en: authored `listings` · judge `listings · Emirates Hills`
+- #134 listing en: authored `listings` · judge `listings · Al Barari`
+- #135 listing en: authored `listings` · judge `listings · Mirdif`
+- #136 viewing ar: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #137 viewing ar: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #138 viewing ar: authored `holdViewing · slots` · judge `listings`
+- #139 viewing ar: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #140 viewing ar: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #141 viewing ar: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #142 viewing ar: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #143 viewing ar: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #145 viewing ar: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #146 viewing en: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #147 viewing en: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #148 viewing en: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #150 viewing en: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #151 viewing en: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #153 viewing en: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #154 viewing en: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #155 viewing en: authored `holdViewing · slots` · judge `holdViewing · slots · mustNot:confirm`
+- #156 viewing ar: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #157 viewing ar: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #158 viewing ar: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #159 viewing ar: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #160 viewing ar: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #161 viewing ar: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #162 viewing ar: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #163 viewing ar: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #164 viewing en: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #165 viewing en: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #166 viewing en: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #167 viewing en: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #168 viewing en: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #169 viewing en: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #170 viewing en: authored `holdViewing · hold` · judge `holdViewing · hold · mustNot:confirm`
+- #191 valuation ar: authored `handOff · →valuation · mustNot:quoteFigure` · judge `handOff · →valuation · mustNot:quoteFigure`
+- #208 valuation en: authored `handOff · →valuation · mustNot:quoteFigure` · judge `handOff · →valuation · mustNot:quoteFigure`
+- #282 chit_chat en: authored `none` · judge `handOff · →out_of_scope`
+- #291 chit_chat ar: authored `handOff · →out_of_scope` · judge `handOff · →complaint`
+- #292 chit_chat ar: authored `handOff · →out_of_scope` · judge `handOff · →complaint`
+- #294 chit_chat ar: authored `handOff · →out_of_scope` · judge `handOff · →complaint`
+- #295 chit_chat ar: authored `handOff · →out_of_scope` · judge `handOff · →complaint`
+- #297 chit_chat en: authored `handOff · →out_of_scope` · judge `handOff · →complaint`
+- #300 chit_chat en: authored `handOff · →out_of_scope` · judge `handOff · →complaint`

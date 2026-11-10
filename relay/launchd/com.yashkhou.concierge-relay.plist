@@ -5,8 +5,8 @@
 	<key>Label</key><string>com.yashkhou.concierge-relay</string>
 	<key>EnvironmentVariables</key>
 	<dict>
-		<key>PATH</key><string>/Users/joshuakhoury/.nvm/versions/node/v24.12.0/bin:/Users/joshuakhoury/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
-		<key>HOME</key><string>/Users/joshuakhoury</string>
+		<key>PATH</key><string>__NODE_BIN__:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+		<key>HOME</key><string>__HOME__</string>
 		<key>PORT</key><string>4630</string>
 		<key>CONCIERGE_MODEL</key><string>sonnet</string>
 		<key>MAX_CONCURRENT</key><string>3</string>
@@ -14,13 +14,13 @@
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/sh</string>
-		<string>/Users/joshuakhoury/Projects/gulf-concierge-agent/relay/launchd/run-relay.sh</string>
+		<string>__REPO__/relay/launchd/run-relay.sh</string>
 	</array>
-	<key>WorkingDirectory</key><string>/Users/joshuakhoury/Projects/gulf-concierge-agent</string>
+	<key>WorkingDirectory</key><string>__REPO__</string>
 	<key>RunAtLoad</key><true/>
 	<key>KeepAlive</key><true/>
 	<key>ThrottleInterval</key><integer>10</integer>
-	<key>StandardOutPath</key><string>/Users/joshuakhoury/Library/Logs/concierge/relay.log</string>
-	<key>StandardErrorPath</key><string>/Users/joshuakhoury/Library/Logs/concierge/relay.err.log</string>
+	<key>StandardOutPath</key><string>__HOME__/Library/Logs/concierge/relay.log</string>
+	<key>StandardErrorPath</key><string>__HOME__/Library/Logs/concierge/relay.err.log</string>
 </dict>
 </plist>

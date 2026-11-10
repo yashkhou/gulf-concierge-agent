@@ -8,14 +8,14 @@
 		<string>/opt/homebrew/bin/cloudflared</string>
 		<string>tunnel</string>
 		<string>--config</string>
-		<string>/Users/joshuakhoury/.cloudflared/concierge-relay.yml</string>
+		<string>__HOME__/.cloudflared/concierge-relay.yml</string>
 		<string>run</string>
-		<string>5f5995cb-fc8c-4e24-969f-febf0f788375</string>
+		<string>__TUNNEL_ID__</string>
 	</array>
 	<key>RunAtLoad</key><true/>
 	<key>KeepAlive</key><true/>
 	<key>ThrottleInterval</key><integer>10</integer>
-	<key>StandardOutPath</key><string>/Users/joshuakhoury/Library/Logs/concierge/tunnel.log</string>
-	<key>StandardErrorPath</key><string>/Users/joshuakhoury/Library/Logs/concierge/tunnel.err.log</string>
+	<key>StandardOutPath</key><string>__HOME__/Library/Logs/concierge/tunnel.log</string>
+	<key>StandardErrorPath</key><string>__HOME__/Library/Logs/concierge/tunnel.err.log</string>
 </dict>
 </plist>

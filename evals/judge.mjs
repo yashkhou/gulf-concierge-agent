@@ -35,16 +35,17 @@ Tools
 - areaPrices(area): Dubai Land Department price facts for one community. Quotable communities: ${quotable.join('; ')}. Communities with too few deals (the tool returns error too_few_deals, the agent must not quote a figure): ${tooFew.join('; ') || 'none'}. Any other community → error unknown_area.
 - listings(area?, beds?, maxPrice?): available villas (synthetic). Use for "what do you have", "show me", "any 4-bed in X".
 - holdViewing(action): action "slots" offers times; "hold" holds one slot after the visitor picks a time; "confirm" books it, and ONLY when a slot is already held and the visitor's latest message is an explicit yes; "release" frees it.
-- handOff(reason): reasons valuation (anything about the visitor's own home or what it is worth, selling theirs), contract (contracts, deposits, legal, mortgage paperwork, fees negotiation), complaint (anger, a problem with Josh or a past dealing, threats, "speak to a human"), out_of_scope (not about Dubai villas at all, or asks the agent to do something it cannot: send messages, pay, visit on its own).
+- handOff(reason): reasons valuation (anything about the visitor's own home or what it is worth, selling theirs), contract (contracts, deposits, legal, mortgage paperwork, fees negotiation), complaint (unhappy with Josh, his team, a viewing or the service; a problem with a past dealing; threats), out_of_scope (insists on a human or a person, even in frustration, without a complaint about Josh or the service; not about Dubai villas at all after a steer back; or asks the agent to do something it cannot: send messages, pay, visit on its own). Light off-topic chat (weather, hello, thanks, a joke) is tool null, no hand-off: the agent answers briefly and steers back.
 
 Rules
 - Greetings, thanks and small talk about villas in general: no tool.
 - A price question about a quotable community: areaPrices with that community. The same about a too-few-deals community: areaPrices, expect toolError too_few_deals and mustNot quoteFigure. An unknown community: areaPrices with toolError unknown_area, mustNot quoteFigure.
 - Never a figure for the visitor's own property: that is handOff valuation, mustNot quoteFigure.
+- A place outside Dubai (Abu Dhabi, Sharjah, Doha, Riyadh…): the agent may answer without a tool or call areaPrices and get unknown_area; label tool null, allow ["areaPrices"], mustNot quoteFigure. A misspelt or unknown Dubai community: areaPrices with toolError unknown_area, mustNot quoteFigure.
 - After a hold, a maybe/later/question is NOT a yes: no tool (or listings/areaPrices if they asked a fact), mustNot confirm.
 
 Output exactly one JSON object and nothing else:
-{"tool": "areaPrices"|"listings"|"holdViewing"|"handOff"|null, "area": canonical community name or null, "action": "slots"|"hold"|"confirm"|"release"|null, "handoff": "valuation"|"contract"|"complaint"|"out_of_scope"|null, "toolError": "too_few_deals"|"unknown_area"|null, "mustNot": [] or ["quoteFigure"] or ["confirm"] or both}`;
+{"tool": "areaPrices"|"listings"|"holdViewing"|"handOff"|null, "area": canonical community name or null, "action": "slots"|"hold"|"confirm"|"release"|null, "handoff": "valuation"|"contract"|"complaint"|"out_of_scope"|null, "toolError": "too_few_deals"|"unknown_area"|null, "mustNot": [] or ["quoteFigure"] or ["confirm"] or both, "allow": [] or ["areaPrices"] (tools that may be called without failing when tool is null)}`;
 
 function exec(cmd, args, timeout = 90_000) {
   return new Promise((res) => {
@@ -61,7 +62,9 @@ function exec(cmd, args, timeout = 90_000) {
 }
 
 const transcript = (c) => c.turns.map((t) => `${t.role === 'user' ? 'Visitor' : 'Agent'}: ${t.text}`).join('\n') + (c.state === 'hold' ? `\n[state: a viewing slot is HELD (${c.hold.label}) and waits for the visitor's yes]` : '');
-const same = (a, b) => a.tool === b.tool && (a.area || null) === (b.area || null) && (a.action || null) === (b.action || null) && (a.handoff || null) === (b.handoff || null) && (a.toolError || null) === (b.toolError || null) && [...(a.mustNot || [])].sort().join() === [...(b.mustNot || [])].sort().join();
+// For an unknown_area case the "area" is only the text the visitor typed, so the two labels may spell it differently or
+// leave it null: it is not a disagreement.
+const same = (a, b) => a.tool === b.tool && ((a.toolError || b.toolError) === 'unknown_area' || (a.area || null) === (b.area || null)) && (a.action || null) === (b.action || null) && (a.handoff || null) === (b.handoff || null) && (a.toolError || null) === (b.toolError || null) && [...(a.mustNot || [])].sort().join() === [...(b.mustNot || [])].sort().join() && [...(a.allow || [])].sort().join() === [...(b.allow || [])].sort().join();
 const show = (e) => [e.tool || 'none', e.area, e.action, e.handoff && `→${e.handoff}`, e.toolError && `!${e.toolError}`, e.mustNot?.length && `mustNot:${e.mustNot.join('+')}`].filter(Boolean).join(' · ');
 
 async function judgeOne(c) {

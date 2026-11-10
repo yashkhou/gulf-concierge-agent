@@ -1,0 +1,1890 @@
+{
+ "exportedAt": "2026-11-10",
+ "edition": "2026-11",
+ "window": {
+  "from": "2026-08-01",
+  "to": "2026-10-31"
+ },
+ "minDeals": 10,
+ "unit": "AED per sq ft of plot, ready villas and townhouses, DLD-registered sales",
+ "source": "brokerjosh Dubai Villa Price Index (2026-11), built from Dubai Land Department open data",
+ "sourceUrl": "https://thebrokerjosh.com/dubai-villa-price-index/",
+ "dubai": {
+  "sales": 930,
+  "medianPpsf": 1565,
+  "medianPrice": 3750000,
+  "mom": 0.8,
+  "yoy": 0.2
+ },
+ "areas": [
+  {
+   "name": "Al Furjan",
+   "slug": "al-furjan",
+   "sales": 14,
+   "medianPpsf": 1697,
+   "medianPrice": 3883000,
+   "mom": -2.6,
+   "yoy": -7.2,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 34,
+     "median": 3500000,
+     "ppsf": 1864
+    },
+    {
+     "beds": 4,
+     "sales": 53,
+     "median": 3900000,
+     "ppsf": 1820
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 941,
+     "medianPrice": 2020000,
+     "sales": 61,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 1206,
+     "medianPrice": 2430000,
+     "sales": 131,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 1398,
+     "medianPrice": 2800000,
+     "sales": 211,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1534,
+     "medianPrice": 3350000,
+     "sales": 171,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1733,
+     "medianPrice": 3900000,
+     "sales": 170,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1816,
+     "medianPrice": 3750000,
+     "sales": 67,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Al Warsan 3",
+   "slug": "al-warsan-3",
+   "sales": 11,
+   "medianPpsf": 260,
+   "medianPrice": 1302000,
+   "mom": 0,
+   "yoy": 0,
+   "byBeds12m": [
+    {
+     "beds": null,
+     "sales": 49,
+     "median": 1499000,
+     "ppsf": 260
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2024,
+     "medianPpsf": 260,
+     "medianPrice": 1343000,
+     "sales": 30,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 260,
+     "medianPrice": 1384000,
+     "sales": 159,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 260,
+     "medianPrice": 1451000,
+     "sales": 40,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Arabian Ranches",
+   "slug": "arabian-ranches",
+   "sales": 38,
+   "medianPpsf": 1428,
+   "medianPrice": 4900000,
+   "mom": 1.9,
+   "yoy": -7.3,
+   "byBeds12m": [
+    {
+     "beds": 2,
+     "sales": 40,
+     "median": 3938000,
+     "ppsf": 1450
+    },
+    {
+     "beds": 3,
+     "sales": 91,
+     "median": 5000000,
+     "ppsf": 1436
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 700,
+     "medianPrice": 2324000,
+     "sales": 181,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 846,
+     "medianPrice": 2738000,
+     "sales": 198,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 987,
+     "medianPrice": 3300000,
+     "sales": 200,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1237,
+     "medianPrice": 3775000,
+     "sales": 203,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1426,
+     "medianPrice": 4700000,
+     "sales": 189,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1446,
+     "medianPrice": 4900000,
+     "sales": 103,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Arabian Ranches III",
+   "slug": "arabian-ranches-iii",
+   "sales": 59,
+   "medianPpsf": 1799,
+   "medianPrice": 3300000,
+   "mom": 4.8,
+   "yoy": -14.1,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 74,
+     "median": 3000000,
+     "ppsf": 2028
+    },
+    {
+     "beds": 4,
+     "sales": 63,
+     "median": 4350000,
+     "ppsf": 1533
+    },
+    {
+     "beds": 5,
+     "sales": 10,
+     "median": 6050000,
+     "ppsf": 1338
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2023,
+     "medianPpsf": 1502,
+     "medianPrice": 2440000,
+     "sales": 21,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1667,
+     "medianPrice": 2750000,
+     "sales": 51,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1991,
+     "medianPrice": 3392000,
+     "sales": 88,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1796,
+     "medianPrice": 3365000,
+     "sales": 137,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "DAMAC Lagoons",
+   "slug": "damac-lagoons",
+   "sales": 77,
+   "medianPpsf": 1710,
+   "medianPrice": 2700000,
+   "mom": 1.9,
+   "yoy": null,
+   "byBeds12m": [
+    {
+     "beds": null,
+     "sales": 153,
+     "median": 2800000,
+     "ppsf": 1710
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2025,
+     "medianPpsf": 1935,
+     "medianPrice": 3078000,
+     "sales": 10,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1703,
+     "medianPrice": 2775000,
+     "sales": 147,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Dubai Hills Estate",
+   "slug": "dubai-hills-estate",
+   "sales": 20,
+   "medianPpsf": 2215,
+   "medianPrice": 5450000,
+   "mom": -2.7,
+   "yoy": 7.8,
+   "byBeds12m": [
+    {
+     "beds": 2,
+     "sales": 3,
+     "median": 3100000,
+     "ppsf": 2197
+    },
+    {
+     "beds": 3,
+     "sales": 40,
+     "median": 4950000,
+     "ppsf": 2290
+    },
+    {
+     "beds": 4,
+     "sales": 57,
+     "median": 5650000,
+     "ppsf": 1912
+    },
+    {
+     "beds": 5,
+     "sales": 14,
+     "median": 6250000,
+     "ppsf": 1982
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 1038,
+     "medianPrice": 2850000,
+     "sales": 172,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 1219,
+     "medianPrice": 3450000,
+     "sales": 194,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 1481,
+     "medianPrice": 4100000,
+     "sales": 204,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1744,
+     "medianPrice": 4700000,
+     "sales": 183,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1945,
+     "medianPrice": 5700000,
+     "sales": 148,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 2064,
+     "medianPrice": 5500000,
+     "sales": 96,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Dubai South",
+   "slug": "dubai-south",
+   "sales": 16,
+   "medianPpsf": 1246,
+   "medianPrice": 3360000,
+   "mom": -25.9,
+   "yoy": -4,
+   "byBeds12m": [
+    {
+     "beds": 2,
+     "sales": 7,
+     "median": 2450000,
+     "ppsf": 1736
+    },
+    {
+     "beds": 3,
+     "sales": 31,
+     "median": 3050000,
+     "ppsf": 1652
+    },
+    {
+     "beds": 4,
+     "sales": 30,
+     "median": 3848000,
+     "ppsf": 1220
+    },
+    {
+     "beds": 5,
+     "sales": 5,
+     "median": 5450000,
+     "ppsf": 1238
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2024,
+     "medianPpsf": 1594,
+     "medianPrice": 2850000,
+     "sales": 14,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1292,
+     "medianPrice": 3200000,
+     "sales": 77,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1332,
+     "medianPrice": 3450000,
+     "sales": 55,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Emaar South",
+   "slug": "emaar-south",
+   "sales": 26,
+   "medianPpsf": 1336,
+   "medianPrice": 2225000,
+   "mom": 0,
+   "yoy": -6.2,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 79,
+     "median": 2250000,
+     "ppsf": 1515
+    },
+    {
+     "beds": 4,
+     "sales": 39,
+     "median": 3100000,
+     "ppsf": 1051
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2023,
+     "medianPpsf": 942,
+     "medianPrice": 1470000,
+     "sales": 18,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1152,
+     "medianPrice": 2075000,
+     "sales": 63,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1386,
+     "medianPrice": 2255000,
+     "sales": 115,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1390,
+     "medianPrice": 2315000,
+     "sales": 97,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Green Community",
+   "slug": "green-community",
+   "sales": 11,
+   "medianPpsf": 1024,
+   "medianPrice": 8000000,
+   "mom": 0,
+   "yoy": 42.3,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 20,
+     "median": 5000000,
+     "ppsf": 1239
+    },
+    {
+     "beds": 4,
+     "sales": 35,
+     "median": 8200000,
+     "ppsf": 831
+    },
+    {
+     "beds": 5,
+     "sales": 8,
+     "median": 12000000,
+     "ppsf": 805
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 791,
+     "medianPrice": 2969000,
+     "sales": 243,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 514,
+     "medianPrice": 3850000,
+     "sales": 99,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 557,
+     "medianPrice": 4550000,
+     "sales": 105,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 726,
+     "medianPrice": 5325000,
+     "sales": 82,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 863,
+     "medianPrice": 6759000,
+     "sales": 80,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 889,
+     "medianPrice": 7600000,
+     "sales": 53,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Jumeirah Islands",
+   "slug": "jumeirah-islands",
+   "sales": 17,
+   "medianPpsf": 2086,
+   "medianPrice": 21250000,
+   "mom": -4.5,
+   "yoy": 2.4,
+   "byBeds12m": [
+    {
+     "beds": null,
+     "sales": 69,
+     "median": 23250000,
+     "ppsf": 2283
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 689,
+     "medianPrice": 6950000,
+     "sales": 80,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 782,
+     "medianPrice": 8363000,
+     "sales": 146,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 1284,
+     "medianPrice": 12950000,
+     "sales": 110,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1819,
+     "medianPrice": 18400000,
+     "sales": 107,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 2051,
+     "medianPrice": 22000000,
+     "sales": 105,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 2475,
+     "medianPrice": 23725000,
+     "sales": 50,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Jumeirah Park",
+   "slug": "jumeirah-park",
+   "sales": 28,
+   "medianPpsf": 1360,
+   "medianPrice": 8600000,
+   "mom": -1.6,
+   "yoy": 11.1,
+   "byBeds12m": [
+    {
+     "beds": 4,
+     "sales": 3,
+     "median": 5600000,
+     "ppsf": 2723
+    },
+    {
+     "beds": null,
+     "sales": 136,
+     "median": 9285000,
+     "ppsf": 1360
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 571,
+     "medianPrice": 3865000,
+     "sales": 225,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 689,
+     "medianPrice": 4500000,
+     "sales": 318,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 821,
+     "medianPrice": 5200000,
+     "sales": 285,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1027,
+     "medianPrice": 7000000,
+     "sales": 201,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1230,
+     "medianPrice": 8400000,
+     "sales": 185,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1369,
+     "medianPrice": 9050000,
+     "sales": 110,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Jumeirah Village Circle",
+   "slug": "jumeirah-village-circle",
+   "sales": 35,
+   "medianPpsf": 1648,
+   "medianPrice": 3100000,
+   "mom": 2.8,
+   "yoy": 2,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 77,
+     "median": 3050000,
+     "ppsf": 1706
+    },
+    {
+     "beds": 4,
+     "sales": 84,
+     "median": 3383000,
+     "ppsf": 1649
+    },
+    {
+     "beds": 5,
+     "sales": 2,
+     "median": 3585000,
+     "ppsf": null
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 883,
+     "medianPrice": 1750000,
+     "sales": 148,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 1009,
+     "medianPrice": 1800000,
+     "sales": 163,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 1170,
+     "medianPrice": 2300000,
+     "sales": 218,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1495,
+     "medianPrice": 2800000,
+     "sales": 265,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1588,
+     "medianPrice": 2900000,
+     "sales": 246,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1697,
+     "medianPrice": 3300000,
+     "sales": 135,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "MBR City",
+   "slug": "mbr-city",
+   "sales": 10,
+   "medianPpsf": 2329,
+   "medianPrice": 11895000,
+   "mom": -1.7,
+   "yoy": 2.3,
+   "byBeds12m": [
+    {
+     "beds": 2,
+     "sales": 8,
+     "median": 2835000,
+     "ppsf": 2222
+    },
+    {
+     "beds": 3,
+     "sales": 15,
+     "median": 3700000,
+     "ppsf": 2535
+    },
+    {
+     "beds": 4,
+     "sales": 2,
+     "median": 6450000,
+     "ppsf": null
+    },
+    {
+     "beds": null,
+     "sales": 21,
+     "median": 21000000,
+     "ppsf": 2664
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2023,
+     "medianPpsf": 2190,
+     "medianPrice": 19000000,
+     "sales": 5,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1984,
+     "medianPrice": 2750000,
+     "sales": 89,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 2128,
+     "medianPrice": 3050000,
+     "sales": 63,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 2485,
+     "medianPrice": 11000000,
+     "sales": 41,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Mira and Mira Oasis (Reem)",
+   "slug": "reem",
+   "sales": 44,
+   "medianPpsf": 1207,
+   "medianPrice": 3500000,
+   "mom": -0.1,
+   "yoy": 0.6,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 121,
+     "median": 3200000,
+     "ppsf": 1197
+    },
+    {
+     "beds": 4,
+     "sales": 64,
+     "median": 4083000,
+     "ppsf": 1257
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 642,
+     "medianPrice": 1850000,
+     "sales": 225,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 751,
+     "medianPrice": 2100000,
+     "sales": 228,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 829,
+     "medianPrice": 2330000,
+     "sales": 326,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1018,
+     "medianPrice": 2828000,
+     "sales": 285,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1140,
+     "medianPrice": 3100000,
+     "sales": 311,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1227,
+     "medianPrice": 3475000,
+     "sales": 157,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Motor City",
+   "slug": "motor-city",
+   "sales": 10,
+   "medianPpsf": 1626,
+   "medianPrice": 6925000,
+   "mom": 2.5,
+   "yoy": 1,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 12,
+     "median": 6600000,
+     "ppsf": 1609
+    },
+    {
+     "beds": 4,
+     "sales": 17,
+     "median": 9000000,
+     "ppsf": 1230
+    },
+    {
+     "beds": 5,
+     "sales": 1,
+     "median": 8925000,
+     "ppsf": null
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 876,
+     "medianPrice": 2556000,
+     "sales": 131,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 844,
+     "medianPrice": 4100000,
+     "sales": 27,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 742,
+     "medianPrice": 3350000,
+     "sales": 56,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1266,
+     "medianPrice": 4750000,
+     "sales": 46,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1536,
+     "medianPrice": 4500000,
+     "sales": 49,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1545,
+     "medianPrice": 7275000,
+     "sales": 26,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Mudon",
+   "slug": "mudon",
+   "sales": 53,
+   "medianPpsf": 1721,
+   "medianPrice": 4100000,
+   "mom": 2.8,
+   "yoy": -0.8,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 96,
+     "median": 3500000,
+     "ppsf": 1881
+    },
+    {
+     "beds": 4,
+     "sales": 79,
+     "median": 4550000,
+     "ppsf": 1519
+    },
+    {
+     "beds": null,
+     "sales": 3,
+     "median": 4000000,
+     "ppsf": 1265
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2025,
+     "medianPpsf": 1751,
+     "medianPrice": 3500000,
+     "sales": 81,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1750,
+     "medianPrice": 4050000,
+     "sales": 147,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Nad Al Sheba Gardens",
+   "slug": "nad-al-sheba-gardens",
+   "sales": 18,
+   "medianPpsf": 1947,
+   "medianPrice": 8500000,
+   "mom": 4.7,
+   "yoy": null,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 4,
+     "median": 6650000,
+     "ppsf": 1795
+    },
+    {
+     "beds": null,
+     "sales": 53,
+     "median": 10270000,
+     "ppsf": 2219
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2024,
+     "medianPpsf": 1035,
+     "medianPrice": 15425000,
+     "sales": 6,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 2124,
+     "medianPrice": 9000000,
+     "sales": 57,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Palm Jumeirah",
+   "slug": "palm-jumeirah",
+   "sales": 22,
+   "medianPpsf": 5984,
+   "medianPrice": 57750000,
+   "mom": 6.9,
+   "yoy": 25.3,
+   "byBeds12m": [
+    {
+     "beds": 5,
+     "sales": 2,
+     "median": 27800000,
+     "ppsf": null
+    },
+    {
+     "beds": 6,
+     "sales": 1,
+     "median": 260000000,
+     "ppsf": null
+    },
+    {
+     "beds": 7,
+     "sales": 1,
+     "median": 60000000,
+     "ppsf": null
+    },
+    {
+     "beds": null,
+     "sales": 88,
+     "median": 42000000,
+     "ppsf": 4975
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 1965,
+     "medianPrice": 16450000,
+     "sales": 201,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 2826,
+     "medianPrice": 21000000,
+     "sales": 155,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 3644,
+     "medianPrice": 27000000,
+     "sales": 175,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 4059,
+     "medianPrice": 30950000,
+     "sales": 154,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 4388,
+     "medianPrice": 33625000,
+     "sales": 142,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 5411,
+     "medianPrice": 46500000,
+     "sales": 74,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Rukan",
+   "slug": "rukan",
+   "sales": 16,
+   "medianPpsf": 1433,
+   "medianPrice": 1055000,
+   "mom": -13.4,
+   "yoy": -6.4,
+   "byBeds12m": [
+    {
+     "beds": 1,
+     "sales": 65,
+     "median": 1000000,
+     "ppsf": 1659
+    },
+    {
+     "beds": 2,
+     "sales": 41,
+     "median": 1730000,
+     "ppsf": 1585
+    },
+    {
+     "beds": 3,
+     "sales": 14,
+     "median": 2175000,
+     "ppsf": 1776
+    },
+    {
+     "beds": 4,
+     "sales": 2,
+     "median": 3225000,
+     "ppsf": null
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2023,
+     "medianPpsf": 976,
+     "medianPrice": 1151000,
+     "sales": 30,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1125,
+     "medianPrice": 953000,
+     "sales": 102,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1523,
+     "medianPrice": 1274000,
+     "sales": 122,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1634,
+     "medianPrice": 1150000,
+     "sales": 93,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Serena",
+   "slug": "serena",
+   "sales": 16,
+   "medianPpsf": 1258,
+   "medianPrice": 2900000,
+   "mom": -2.6,
+   "yoy": -2.5,
+   "byBeds12m": [
+    {
+     "beds": 2,
+     "sales": 20,
+     "median": 2465000,
+     "ppsf": 1306
+    },
+    {
+     "beds": 3,
+     "sales": 54,
+     "median": 3338000,
+     "ppsf": 1234
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 698,
+     "medianPrice": 1467000,
+     "sales": 65,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 786,
+     "medianPrice": 1773000,
+     "sales": 76,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 884,
+     "medianPrice": 2050000,
+     "sales": 93,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1105,
+     "medianPrice": 2500000,
+     "sales": 95,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1234,
+     "medianPrice": 2800000,
+     "sales": 102,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1271,
+     "medianPrice": 3000000,
+     "sales": 68,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "The Fields",
+   "slug": "the-fields",
+   "sales": 18,
+   "medianPpsf": 1494,
+   "medianPrice": 4050000,
+   "mom": -3.6,
+   "yoy": -17.4,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 8,
+     "median": 3175000,
+     "ppsf": 1576
+    },
+    {
+     "beds": 4,
+     "sales": 71,
+     "median": 3900000,
+     "ppsf": 1612
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2023,
+     "medianPpsf": 1456,
+     "medianPrice": 3500000,
+     "sales": 26,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1602,
+     "medianPrice": 3500000,
+     "sales": 51,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1706,
+     "medianPrice": 3850000,
+     "sales": 58,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1602,
+     "medianPrice": 3800000,
+     "sales": 65,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "The Lakes",
+   "slug": "the-lakes",
+   "sales": 10,
+   "medianPpsf": 2437,
+   "medianPrice": 6775000,
+   "mom": 0,
+   "yoy": 31.9,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 31,
+     "median": 6900000,
+     "ppsf": 2343
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 999,
+     "medianPrice": 3100000,
+     "sales": 74,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 1318,
+     "medianPrice": 3675000,
+     "sales": 83,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 1442,
+     "medianPrice": 4250000,
+     "sales": 73,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1684,
+     "medianPrice": 5350000,
+     "sales": 53,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 2024,
+     "medianPrice": 6000000,
+     "sales": 33,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 2343,
+     "medianPrice": 6850000,
+     "sales": 29,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "The Meadows",
+   "slug": "the-meadows",
+   "sales": 16,
+   "medianPpsf": 1878,
+   "medianPrice": 11450000,
+   "mom": 3.8,
+   "yoy": 9.4,
+   "byBeds12m": [
+    {
+     "beds": null,
+     "sales": 84,
+     "median": 11775000,
+     "ppsf": 1802
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 739,
+     "medianPrice": 4750000,
+     "sales": 181,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 909,
+     "medianPrice": 6000000,
+     "sales": 154,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 1046,
+     "medianPrice": 6875000,
+     "sales": 156,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1267,
+     "medianPrice": 8325000,
+     "sales": 182,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1647,
+     "medianPrice": 10600000,
+     "sales": 145,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1808,
+     "medianPrice": 12000000,
+     "sales": 71,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "The Springs",
+   "slug": "the-springs",
+   "sales": 69,
+   "medianPpsf": 1603,
+   "medianPrice": 4150000,
+   "mom": -0.1,
+   "yoy": 2.3,
+   "byBeds12m": [
+    {
+     "beds": 2,
+     "sales": 193,
+     "median": 3650000,
+     "ppsf": 1633
+    },
+    {
+     "beds": 3,
+     "sales": 145,
+     "median": 5700000,
+     "ppsf": 1709
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 756,
+     "medianPrice": 2250000,
+     "sales": 378,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 862,
+     "medianPrice": 2500000,
+     "sales": 441,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 1049,
+     "medianPrice": 2900000,
+     "sales": 437,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1311,
+     "medianPrice": 3638000,
+     "sales": 460,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1573,
+     "medianPrice": 4125000,
+     "sales": 458,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1665,
+     "medianPrice": 4305000,
+     "sales": 276,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "The Valley",
+   "slug": "the-valley",
+   "sales": 47,
+   "medianPpsf": 1380,
+   "medianPrice": 2750000,
+   "mom": 0,
+   "yoy": -5.6,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 142,
+     "median": 2750000,
+     "ppsf": 1495
+    },
+    {
+     "beds": 4,
+     "sales": 91,
+     "median": 3450000,
+     "ppsf": 1227
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2024,
+     "medianPpsf": 1255,
+     "medianPrice": 2405000,
+     "sales": 22,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1458,
+     "medianPrice": 2850000,
+     "sales": 106,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1415,
+     "medianPrice": 2900000,
+     "sales": 203,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "The Villa",
+   "slug": "the-villa",
+   "sales": 23,
+   "medianPpsf": 944,
+   "medianPrice": 8400000,
+   "mom": 0.6,
+   "yoy": -5.2,
+   "byBeds12m": [
+    {
+     "beds": null,
+     "sales": 91,
+     "median": 7350000,
+     "ppsf": 994
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 508,
+     "medianPrice": 3800000,
+     "sales": 167,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 583,
+     "medianPrice": 4250000,
+     "sales": 165,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 675,
+     "medianPrice": 5100000,
+     "sales": 159,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 815,
+     "medianPrice": 5900000,
+     "sales": 167,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 942,
+     "medianPrice": 7500000,
+     "sales": 169,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 988,
+     "medianPrice": 7080000,
+     "sales": 73,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Tilal Al Ghaf",
+   "slug": "tilal-al-ghaf",
+   "sales": 19,
+   "medianPpsf": 2223,
+   "medianPrice": 4050000,
+   "mom": 8.2,
+   "yoy": -5.8,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 37,
+     "median": 3900000,
+     "ppsf": 2535
+    },
+    {
+     "beds": 4,
+     "sales": 53,
+     "median": 4950000,
+     "ppsf": 2147
+    },
+    {
+     "beds": 5,
+     "sales": 3,
+     "median": 6250000,
+     "ppsf": 2440
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2023,
+     "medianPpsf": 1780,
+     "medianPrice": 2810000,
+     "sales": 40,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1975,
+     "medianPrice": 3473000,
+     "sales": 32,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 2328,
+     "medianPrice": 4325000,
+     "sales": 56,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 2404,
+     "medianPrice": 4250000,
+     "sales": 76,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Town Square",
+   "slug": "town-square",
+   "sales": 52,
+   "medianPpsf": 1334,
+   "medianPrice": 2988000,
+   "mom": -0.6,
+   "yoy": 1.8,
+   "byBeds12m": [
+    {
+     "beds": 3,
+     "sales": 192,
+     "median": 2850000,
+     "ppsf": 1409
+    },
+    {
+     "beds": 4,
+     "sales": 64,
+     "median": 3500000,
+     "ppsf": 1201
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 700,
+     "medianPrice": 1565000,
+     "sales": 267,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 801,
+     "medianPrice": 1750000,
+     "sales": 227,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 903,
+     "medianPrice": 1975000,
+     "sales": 200,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1101,
+     "medianPrice": 2395000,
+     "sales": 352,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1279,
+     "medianPrice": 2760000,
+     "sales": 321,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1359,
+     "medianPrice": 2950000,
+     "sales": 199,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Victory Heights",
+   "slug": "victory-heights",
+   "sales": 23,
+   "medianPpsf": 1702,
+   "medianPrice": 10050000,
+   "mom": 0,
+   "yoy": 18.3,
+   "byBeds12m": [
+    {
+     "beds": null,
+     "sales": 58,
+     "median": 11300000,
+     "ppsf": 1706
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 659,
+     "medianPrice": 4150000,
+     "sales": 99,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 800,
+     "medianPrice": 5020000,
+     "sales": 126,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 928,
+     "medianPrice": 5900000,
+     "sales": 107,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1233,
+     "medianPrice": 7279000,
+     "sales": 87,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1529,
+     "medianPrice": 8950000,
+     "sales": 74,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1702,
+     "medianPrice": 10750000,
+     "sales": 51,
+     "partial": true
+    }
+   ]
+  },
+  {
+   "name": "Villanova",
+   "slug": "villanova",
+   "sales": 49,
+   "medianPpsf": 1469,
+   "medianPrice": 3075000,
+   "mom": 1.5,
+   "yoy": -3.1,
+   "byBeds12m": [
+    {
+     "beds": 2,
+     "sales": 11,
+     "median": 2425000,
+     "ppsf": 1414
+    },
+    {
+     "beds": 3,
+     "sales": 97,
+     "median": 2900000,
+     "ppsf": 1637
+    },
+    {
+     "beds": 4,
+     "sales": 92,
+     "median": 3700000,
+     "ppsf": 1378
+    }
+   ],
+   "yearly": [
+    {
+     "year": 2021,
+     "medianPpsf": 840,
+     "medianPrice": 1665000,
+     "sales": 9,
+     "partial": false
+    },
+    {
+     "year": 2022,
+     "medianPpsf": 859,
+     "medianPrice": 1688000,
+     "sales": 100,
+     "partial": false
+    },
+    {
+     "year": 2023,
+     "medianPpsf": 1007,
+     "medianPrice": 1950000,
+     "sales": 173,
+     "partial": false
+    },
+    {
+     "year": 2024,
+     "medianPpsf": 1269,
+     "medianPrice": 2500000,
+     "sales": 229,
+     "partial": false
+    },
+    {
+     "year": 2025,
+     "medianPpsf": 1496,
+     "medianPrice": 3028000,
+     "sales": 242,
+     "partial": false
+    },
+    {
+     "year": 2026,
+     "medianPpsf": 1456,
+     "medianPrice": 3100000,
+     "sales": 159,
+     "partial": true
+    }
+   ]
+  }
+ ],
+ "excluded": [
+  {
+   "name": "The Sustainable City",
+   "sales": 8
+  },
+  {
+   "name": "Al Barari",
+   "sales": 7
+  },
+  {
+   "name": "Mirdif",
+   "sales": 7
+  },
+  {
+   "name": "Arabian Ranches II",
+   "sales": 6
+  },
+  {
+   "name": "Cherrywoods",
+   "sales": 6
+  },
+  {
+   "name": "Emirates Hills",
+   "sales": 6
+  },
+  {
+   "name": "Grand Views (Meydan)",
+   "sales": 5
+  }
+ ]
+}

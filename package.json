@@ -1,0 +1,21 @@
+{
+  "name": "gulf-concierge-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A live Arabic/English property concierge agent for Dubai villas: four tools, hard hand-off gates, public evals.",
+  "scripts": {
+    "data": "node scripts/export-prices.mjs && node scripts/make-listings.mjs",
+    "relay": "node relay/relay.mjs",
+    "relay:turn": "node scripts/turn.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "migrate": "wrangler d1 migrations apply concierge --remote",
+    "migrate:local": "wrangler d1 migrations apply concierge --local",
+    "eval": "node evals/run.mjs",
+    "judge": "node evals/judge.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.159.0"
+  }
+}

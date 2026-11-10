@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control room · Josh's concierge</title>
+<meta name="description" content="Live evals, hand-offs, failures, latency and cost of Josh's concierge agent. Every figure comes from the database or the last eval run.">
+<meta name="theme-color" content="#FBF8F3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23E5533D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><span class="name">Josh's concierge</span><span class="by">control room</span></a>
+  <nav class="nav" aria-label="Pages">
+    <span class="pill wait" id="status"><span class="dot" aria-hidden="true"></span><span id="status-t">checking</span></span>
+    <a href="/">Chat</a>
+    <a href="/room/" aria-current="page">Control room</a>
+    <a href="https://github.com/yashkhou/gulf-concierge-agent" rel="noopener">Code</a>
+  </nav>
+</header>
+
+<main>
+  <div class="room-h">
+    <div>
+      <h1>What the agent gets right, and where it fails.</h1>
+      <p>Live figures come from the database behind the chat. Eval figures come from the last run over 300 labelled cases. Nothing on this page is typed in.</p>
+    </div>
+    <span class="pill" id="updated"><span class="dot" aria-hidden="true"></span><span id="updated-t">loading</span></span>
+  </div>
+
+  <section class="tiles" aria-label="Headline figures" id="tiles">
+    <div class="tile empty" id="tile-pass"><span class="k">Eval pass</span><span class="v">No run yet</span><span class="s">300 labelled cases, both languages</span></div>
+    <div class="tile empty" id="tile-handoff"><span class="k">Hand-offs caught</span><span class="v">No run yet</span><span class="s">valuation, contract, complaint, out of scope</span></div>
+    <div class="tile empty" id="tile-p50"><span class="k">Latency, p50</span><span class="v">No chats yet</span><span class="s">live · last 30 days</span></div>
+    <div class="tile empty" id="tile-cost"><span class="k">Cost a conversation</span><span class="v">No chats yet</span><span class="s">live · last 30 days · Claude list price</span></div>
+  </section>
+
+  <section class="grid2" aria-label="Breakdowns">
+    <div class="panel">
+      <h2>Eval pass by category</h2>
+      <p class="scope" id="cat-scope">last run</p>
+      <div class="bars" id="cats"><p class="empty-note">No eval run yet.</p></div>
+    </div>
+    <div class="panel">
+      <h2>Hand-offs by reason</h2>
+      <p class="scope">live · last 30 days</p>
+      <div class="bars" id="reasons"><p class="empty-note">No hand-offs yet.</p></div>
+    </div>
+    <div class="panel">
+      <h2>Conversations a day</h2>
+      <p class="scope">live · last 7 days</p>
+      <div class="spark" id="spark" role="img" aria-label="Conversations a day, last 7 days"></div>
+      <div class="bars" id="tools" style="margin-top:14px"></div>
+    </div>
+  </section>
+
+  <section class="panel" style="margin-top:14px" aria-labelledby="fl">
+    <h2 id="fl">Failure log</h2>
+    <p class="scope" id="fail-scope">Every case the agent got wrong in the last run, with the cause and the fix.</p>
+    <div class="wrap"><table class="tbl" id="fails"><thead><tr><th>Case</th><th>Lang</th><th>Category</th><th>Expected</th><th>Got</th><th>Cause</th><th>Fix</th></tr></thead><tbody><tr><td colspan="7" class="empty-note">No eval run yet.</td></tr></tbody></table></div>
+  </section>
+
+  <section class="grid2 notes" aria-label="Method">
+    <div class="panel">
+      <h2>How the labels were made</h2>
+      <ul id="labels">
+        <li>A model judge labelled all 300 cases.</li>
+        <li>Josh checked 60 by hand; the agreement figure shows how often the judge matched him.</li>
+        <li>A case passes when the agent calls the expected tool (or none), names the right area, hands off for the right reason, and never confirms a viewing or quotes a figure where it must not.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h2>What the agent cannot do</h2>
+      <ul>
+        <li>Send a message, email or WhatsApp. Move or promise money.</li>
+        <li>Quote a figure for an area with fewer than 10 registered deals.</li>
+        <li>Value a visitor's own home. That goes to Josh.</li>
+        <li>Touch a live database. It reads one exported JSON file.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h2>Runs</h2>
+      <div class="wrap"><table class="tbl" id="history"><thead><tr><th>Run</th><th>Pass</th><th>Hand-offs</th><th>p50</th></tr></thead><tbody><tr><td colspan="4" class="empty-note">No eval run yet.</td></tr></tbody></table></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  Latency and cost are measured per turn on the Worker and the relay. Eval runs are triggered by hand after each change to the prompt, tools or data; the full per-case report for each run is in the <a href="https://github.com/yashkhou/gulf-concierge-agent" rel="noopener">repository</a>. Built by <a href="https://yashkhou.com">Josh Khoury</a>.
+</footer>
+<script src="/room/room.js" defer></script>
+</body>
+</html>

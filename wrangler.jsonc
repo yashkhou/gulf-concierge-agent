@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gulf-concierge-agent",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "concierge",
+      "database_id": "7c36c180-2ba9-4fc0-94c8-0420b807a5b0",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "RELAY_URL": "https://concierge-relay.thebrokerjosh.com",
+    "DAILY_CAP_VISITOR": "20",
+    "DAILY_CAP_TOTAL": "400",
+    "MAX_USER_TURNS": "20"
+  },
+  // Secrets (wrangler secret put): RELAY_TOKEN, ADMIN_TOKEN, IP_SALT
+  "routes": [{ "pattern": "agent.yashkhou.com", "custom_domain": true }],
+  "observability": { "enabled": true }
+}

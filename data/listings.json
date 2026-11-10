@@ -1,0 +1,1126 @@
+{
+ "note": "Synthetic inventory for a demo. No listing here exists; no owner, agent or phone number is attached.",
+ "generatedAt": "2026-11-10",
+ "listings": [
+  {
+   "id": "GC-001",
+   "synthetic": true,
+   "area": "Al Furjan",
+   "areaSlug": "al-furjan",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 8050,
+   "buaSqft": 4650,
+   "priceAed": 14900000,
+   "ppsfPlot": 1851,
+   "view": "community pool",
+   "features": [
+    "single row",
+    "maid’s room",
+    "back to back"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-002",
+   "synthetic": true,
+   "area": "Al Warsan 3",
+   "areaSlug": "al-warsan-3",
+   "type": "villa",
+   "beds": 6,
+   "baths": 7,
+   "plotSqft": 8600,
+   "buaSqft": 6950,
+   "priceAed": 2150000,
+   "ppsfPlot": 250,
+   "view": "golf course",
+   "features": [
+    "private pool",
+    "corner plot",
+    "back to back"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-003",
+   "synthetic": true,
+   "area": "Arabian Ranches",
+   "areaSlug": "arabian-ranches",
+   "type": "villa",
+   "beds": 5,
+   "baths": 6,
+   "plotSqft": 7200,
+   "buaSqft": 4100,
+   "priceAed": 11000000,
+   "ppsfPlot": 1528,
+   "view": "community pool",
+   "features": [
+    "single row",
+    "landscaped garden",
+    "private pool"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-004",
+   "synthetic": true,
+   "area": "Arabian Ranches III",
+   "areaSlug": "arabian-ranches-iii",
+   "type": "villa",
+   "beds": 6,
+   "baths": 7,
+   "plotSqft": 7450,
+   "buaSqft": 5900,
+   "priceAed": 14700000,
+   "ppsfPlot": 1973,
+   "view": "golf course",
+   "features": [
+    "vacant on transfer",
+    "back to back",
+    "maid’s room"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-005",
+   "synthetic": true,
+   "area": "DAMAC Lagoons",
+   "areaSlug": "damac-lagoons",
+   "type": "villa",
+   "beds": 6,
+   "baths": 6,
+   "plotSqft": 7950,
+   "buaSqft": 6300,
+   "priceAed": 12000000,
+   "ppsfPlot": 1509,
+   "view": "garden",
+   "features": [
+    "private pool",
+    "landscaped garden",
+    "single row"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-006",
+   "synthetic": true,
+   "area": "Dubai Hills Estate",
+   "areaSlug": "dubai-hills-estate",
+   "type": "villa",
+   "beds": 5,
+   "baths": 6,
+   "plotSqft": 7950,
+   "buaSqft": 6500,
+   "priceAed": 19450000,
+   "ppsfPlot": 2447,
+   "view": "golf course",
+   "features": [
+    "vacant on transfer",
+    "private pool",
+    "back to back"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-007",
+   "synthetic": true,
+   "area": "Dubai South",
+   "areaSlug": "dubai-south",
+   "type": "villa",
+   "beds": 3,
+   "baths": 4,
+   "plotSqft": 5650,
+   "buaSqft": 3800,
+   "priceAed": 6150000,
+   "ppsfPlot": 1088,
+   "view": "golf course",
+   "features": [
+    "vacant on transfer",
+    "maid’s room",
+    "back to back"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-008",
+   "synthetic": true,
+   "area": "Emaar South",
+   "areaSlug": "emaar-south",
+   "type": "villa",
+   "beds": 4,
+   "baths": 4,
+   "plotSqft": 7050,
+   "buaSqft": 4950,
+   "priceAed": 10750000,
+   "ppsfPlot": 1525,
+   "view": "golf course",
+   "features": [
+    "private pool",
+    "maid’s room",
+    "rented until 2027"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-009",
+   "synthetic": true,
+   "area": "Green Community",
+   "areaSlug": "green-community",
+   "type": "villa",
+   "beds": 5,
+   "baths": 6,
+   "plotSqft": 8200,
+   "buaSqft": 4800,
+   "priceAed": 8600000,
+   "ppsfPlot": 1049,
+   "view": "lake",
+   "features": [
+    "vacant on transfer",
+    "private pool",
+    "study"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-010",
+   "synthetic": true,
+   "area": "Jumeirah Islands",
+   "areaSlug": "jumeirah-islands",
+   "type": "villa",
+   "beds": 4,
+   "baths": 4,
+   "plotSqft": 7500,
+   "buaSqft": 5900,
+   "priceAed": 15450000,
+   "ppsfPlot": 2060,
+   "view": "skyline",
+   "features": [
+    "single row",
+    "private pool",
+    "maid’s room"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-011",
+   "synthetic": true,
+   "area": "Jumeirah Park",
+   "areaSlug": "jumeirah-park",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 7550,
+   "buaSqft": 6150,
+   "priceAed": 9900000,
+   "ppsfPlot": 1311,
+   "view": "lake",
+   "features": [
+    "single row",
+    "vacant on transfer",
+    "rented until 2027"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-012",
+   "synthetic": true,
+   "area": "Jumeirah Village Circle",
+   "areaSlug": "jumeirah-village-circle",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 7450,
+   "buaSqft": 5750,
+   "priceAed": 11550000,
+   "ppsfPlot": 1550,
+   "view": "park",
+   "features": [
+    "single row",
+    "back to back",
+    "landscaped garden"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-013",
+   "synthetic": true,
+   "area": "MBR City",
+   "areaSlug": "mbr-city",
+   "type": "villa",
+   "beds": 5,
+   "baths": 6,
+   "plotSqft": 7800,
+   "buaSqft": 6100,
+   "priceAed": 20550000,
+   "ppsfPlot": 2635,
+   "view": "park",
+   "features": [
+    "maid’s room",
+    "single row",
+    "back to back"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-014",
+   "synthetic": true,
+   "area": "Mira and Mira Oasis (Reem)",
+   "areaSlug": "reem",
+   "type": "villa",
+   "beds": 4,
+   "baths": 4,
+   "plotSqft": 6150,
+   "buaSqft": 4600,
+   "priceAed": 7450000,
+   "ppsfPlot": 1211,
+   "view": "skyline",
+   "features": [
+    "maid’s room",
+    "corner plot",
+    "landscaped garden"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-015",
+   "synthetic": true,
+   "area": "Motor City",
+   "areaSlug": "motor-city",
+   "type": "villa",
+   "beds": 5,
+   "baths": 6,
+   "plotSqft": 7700,
+   "buaSqft": 4900,
+   "priceAed": 13450000,
+   "ppsfPlot": 1747,
+   "view": "garden",
+   "features": [
+    "maid’s room",
+    "private pool",
+    "upgraded kitchen"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-016",
+   "synthetic": true,
+   "area": "Mudon",
+   "areaSlug": "mudon",
+   "type": "villa",
+   "beds": 6,
+   "baths": 6,
+   "plotSqft": 8900,
+   "buaSqft": 7150,
+   "priceAed": 14800000,
+   "ppsfPlot": 1663,
+   "view": "community pool",
+   "features": [
+    "corner plot",
+    "single row",
+    "rented until 2027"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-017",
+   "synthetic": true,
+   "area": "Nad Al Sheba Gardens",
+   "areaSlug": "nad-al-sheba-gardens",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 6750,
+   "buaSqft": 4750,
+   "priceAed": 13000000,
+   "ppsfPlot": 1926,
+   "view": "community pool",
+   "features": [
+    "upgraded kitchen",
+    "rented until 2027",
+    "corner plot"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-018",
+   "synthetic": true,
+   "area": "Palm Jumeirah",
+   "areaSlug": "palm-jumeirah",
+   "type": "townhouse",
+   "beds": 4,
+   "baths": 5,
+   "plotSqft": 6150,
+   "buaSqft": 3750,
+   "priceAed": 39450000,
+   "ppsfPlot": 6415,
+   "view": "golf course",
+   "features": [
+    "maid’s room",
+    "rented until 2027",
+    "vacant on transfer"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-019",
+   "synthetic": true,
+   "area": "Rukan",
+   "areaSlug": "rukan",
+   "type": "townhouse",
+   "beds": 3,
+   "baths": 3,
+   "plotSqft": 5400,
+   "buaSqft": 4000,
+   "priceAed": 8100000,
+   "ppsfPlot": 1500,
+   "view": "skyline",
+   "features": [
+    "vacant on transfer",
+    "maid’s room",
+    "landscaped garden"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-020",
+   "synthetic": true,
+   "area": "Serena",
+   "areaSlug": "serena",
+   "type": "villa",
+   "beds": 3,
+   "baths": 4,
+   "plotSqft": 7100,
+   "buaSqft": 5300,
+   "priceAed": 8250000,
+   "ppsfPlot": 1162,
+   "view": "park",
+   "features": [
+    "landscaped garden",
+    "single row",
+    "upgraded kitchen"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-021",
+   "synthetic": true,
+   "area": "The Fields",
+   "areaSlug": "the-fields",
+   "type": "villa",
+   "beds": 4,
+   "baths": 5,
+   "plotSqft": 7000,
+   "buaSqft": 3850,
+   "priceAed": 9000000,
+   "ppsfPlot": 1286,
+   "view": "skyline",
+   "features": [
+    "maid’s room",
+    "corner plot",
+    "back to back"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-022",
+   "synthetic": true,
+   "area": "The Lakes",
+   "areaSlug": "the-lakes",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 7400,
+   "buaSqft": 4300,
+   "priceAed": 16050000,
+   "ppsfPlot": 2169,
+   "view": "community pool",
+   "features": [
+    "upgraded kitchen",
+    "corner plot",
+    "rented until 2027"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-023",
+   "synthetic": true,
+   "area": "The Meadows",
+   "areaSlug": "the-meadows",
+   "type": "villa",
+   "beds": 4,
+   "baths": 5,
+   "plotSqft": 7700,
+   "buaSqft": 5100,
+   "priceAed": 16300000,
+   "ppsfPlot": 2117,
+   "view": "garden",
+   "features": [
+    "maid’s room",
+    "single row",
+    "rented until 2027"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-024",
+   "synthetic": true,
+   "area": "The Springs",
+   "areaSlug": "the-springs",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 7350,
+   "buaSqft": 4600,
+   "priceAed": 10650000,
+   "ppsfPlot": 1449,
+   "view": "skyline",
+   "features": [
+    "maid’s room",
+    "single row",
+    "corner plot"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-025",
+   "synthetic": true,
+   "area": "The Valley",
+   "areaSlug": "the-valley",
+   "type": "townhouse",
+   "beds": 4,
+   "baths": 5,
+   "plotSqft": 6500,
+   "buaSqft": 4800,
+   "priceAed": 10000000,
+   "ppsfPlot": 1538,
+   "view": "garden",
+   "features": [
+    "study",
+    "corner plot",
+    "private pool"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-026",
+   "synthetic": true,
+   "area": "The Villa",
+   "areaSlug": "the-villa",
+   "type": "villa",
+   "beds": 4,
+   "baths": 4,
+   "plotSqft": 7700,
+   "buaSqft": 5700,
+   "priceAed": 7300000,
+   "ppsfPlot": 948,
+   "view": "community pool",
+   "features": [
+    "private pool",
+    "upgraded kitchen",
+    "study"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-027",
+   "synthetic": true,
+   "area": "Tilal Al Ghaf",
+   "areaSlug": "tilal-al-ghaf",
+   "type": "townhouse",
+   "beds": 3,
+   "baths": 4,
+   "plotSqft": 4300,
+   "buaSqft": 2700,
+   "priceAed": 10150000,
+   "ppsfPlot": 2360,
+   "view": "garden",
+   "features": [
+    "vacant on transfer",
+    "upgraded kitchen",
+    "rented until 2027"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-028",
+   "synthetic": true,
+   "area": "Town Square",
+   "areaSlug": "town-square",
+   "type": "villa",
+   "beds": 5,
+   "baths": 6,
+   "plotSqft": 7750,
+   "buaSqft": 5600,
+   "priceAed": 9250000,
+   "ppsfPlot": 1194,
+   "view": "park",
+   "features": [
+    "vacant on transfer",
+    "maid’s room",
+    "upgraded kitchen"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-029",
+   "synthetic": true,
+   "area": "Victory Heights",
+   "areaSlug": "victory-heights",
+   "type": "villa",
+   "beds": 4,
+   "baths": 5,
+   "plotSqft": 6050,
+   "buaSqft": 4600,
+   "priceAed": 10550000,
+   "ppsfPlot": 1744,
+   "view": "skyline",
+   "features": [
+    "back to back",
+    "upgraded kitchen",
+    "vacant on transfer"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-030",
+   "synthetic": true,
+   "area": "Villanova",
+   "areaSlug": "villanova",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 6900,
+   "buaSqft": 4700,
+   "priceAed": 10800000,
+   "ppsfPlot": 1565,
+   "view": "garden",
+   "features": [
+    "vacant on transfer",
+    "back to back",
+    "upgraded kitchen"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-031",
+   "synthetic": true,
+   "area": "Al Furjan",
+   "areaSlug": "al-furjan",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 7900,
+   "buaSqft": 5100,
+   "priceAed": 12850000,
+   "ppsfPlot": 1627,
+   "view": "golf course",
+   "features": [
+    "corner plot",
+    "vacant on transfer",
+    "study"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-032",
+   "synthetic": true,
+   "area": "Al Warsan 3",
+   "areaSlug": "al-warsan-3",
+   "type": "villa",
+   "beds": 5,
+   "baths": 6,
+   "plotSqft": 7450,
+   "buaSqft": 6000,
+   "priceAed": 2050000,
+   "ppsfPlot": 275,
+   "view": "golf course",
+   "features": [
+    "upgraded kitchen",
+    "rented until 2027",
+    "study"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-033",
+   "synthetic": true,
+   "area": "Arabian Ranches",
+   "areaSlug": "arabian-ranches",
+   "type": "villa",
+   "beds": 4,
+   "baths": 4,
+   "plotSqft": 6400,
+   "buaSqft": 4600,
+   "priceAed": 9300000,
+   "ppsfPlot": 1453,
+   "view": "community pool",
+   "features": [
+    "vacant on transfer",
+    "rented until 2027",
+    "upgraded kitchen"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-034",
+   "synthetic": true,
+   "area": "Arabian Ranches III",
+   "areaSlug": "arabian-ranches-iii",
+   "type": "townhouse",
+   "beds": 4,
+   "baths": 4,
+   "plotSqft": 5250,
+   "buaSqft": 3550,
+   "priceAed": 9850000,
+   "ppsfPlot": 1876,
+   "view": "lake",
+   "features": [
+    "vacant on transfer",
+    "study",
+    "single row"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-035",
+   "synthetic": true,
+   "area": "DAMAC Lagoons",
+   "areaSlug": "damac-lagoons",
+   "type": "villa",
+   "beds": 6,
+   "baths": 6,
+   "plotSqft": 8300,
+   "buaSqft": 6300,
+   "priceAed": 12200000,
+   "ppsfPlot": 1470,
+   "view": "park",
+   "features": [
+    "rented until 2027",
+    "landscaped garden",
+    "private pool"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-036",
+   "synthetic": true,
+   "area": "Dubai Hills Estate",
+   "areaSlug": "dubai-hills-estate",
+   "type": "villa",
+   "beds": 6,
+   "baths": 6,
+   "plotSqft": 7400,
+   "buaSqft": 4300,
+   "priceAed": 17500000,
+   "ppsfPlot": 2365,
+   "view": "garden",
+   "features": [
+    "study",
+    "private pool",
+    "back to back"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-037",
+   "synthetic": true,
+   "area": "Dubai South",
+   "areaSlug": "dubai-south",
+   "type": "townhouse",
+   "beds": 4,
+   "baths": 4,
+   "plotSqft": 4900,
+   "buaSqft": 4150,
+   "priceAed": 6650000,
+   "ppsfPlot": 1357,
+   "view": "lake",
+   "features": [
+    "landscaped garden",
+    "upgraded kitchen",
+    "rented until 2027"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-038",
+   "synthetic": true,
+   "area": "Emaar South",
+   "areaSlug": "emaar-south",
+   "type": "villa",
+   "beds": 4,
+   "baths": 5,
+   "plotSqft": 7250,
+   "buaSqft": 4050,
+   "priceAed": 10300000,
+   "ppsfPlot": 1421,
+   "view": "garden",
+   "features": [
+    "private pool",
+    "rented until 2027",
+    "back to back"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-039",
+   "synthetic": true,
+   "area": "Green Community",
+   "areaSlug": "green-community",
+   "type": "villa",
+   "beds": 5,
+   "baths": 6,
+   "plotSqft": 7950,
+   "buaSqft": 4750,
+   "priceAed": 8550000,
+   "ppsfPlot": 1075,
+   "view": "garden",
+   "features": [
+    "rented until 2027",
+    "study",
+    "private pool"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  {
+   "id": "GC-040",
+   "synthetic": true,
+   "area": "Jumeirah Islands",
+   "areaSlug": "jumeirah-islands",
+   "type": "villa",
+   "beds": 5,
+   "baths": 5,
+   "plotSqft": 8050,
+   "buaSqft": 6500,
+   "priceAed": 14950000,
+   "ppsfPlot": 1857,
+   "view": "garden",
+   "features": [
+    "study",
+    "back to back",
+    "vacant on transfer"
+   ],
+   "status": "ready",
+   "viewingDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  }
+ ]
+}

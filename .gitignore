@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.env
+relay/launchd/*.local.plist
+evals/out/
+evals/runs/*.jsonl
+.DS_Store
+
+# eval run log (per-run results are committed)
+evals/runs/latest.log
